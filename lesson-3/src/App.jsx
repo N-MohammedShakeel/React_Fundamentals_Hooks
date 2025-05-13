@@ -1,4 +1,4 @@
-import { UserProvider } from "./UserContext";
+import { UserProvider } from "./Context/UserContext";
 import UserProfile from "./components/UserProfile";
 import UpdateUser from "./components/UpdateUser";
 

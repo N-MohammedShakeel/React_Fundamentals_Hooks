@@ -5,10 +5,10 @@ import UseRefs from "./components/UseRefsInputs";
 const App = () => {
   return (
     <div>
-      {/* <UseRefs />
-      <Timer /> */}
+      <UseRefs />
+      <Timer />
 
-      <FetchData />
+      {/* <FetchData /> */}
     </div>
   );
 };

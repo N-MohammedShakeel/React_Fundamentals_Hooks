@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { UserContext } from "../UserContext";
+import { UserContext } from "../Context/UserContext";
 
 const UpdateUser = () => {
   const { updateUser } = useContext(UserContext);
@@ -22,8 +22,30 @@ const UpdateUser = () => {
           value={newName}
           onChange={(e) => setNewName(e.target.value)}
           placeholder="Enter new name"
+          style={{
+            backdropFilter: "white",
+            padding: "10px",
+            border: "none",
+            borderRadius: "5px",
+            width: "100%",
+            height: "100%",
+            fontSize: "16px",
+            cursor: "text",
+            color: "black",
+            background: "white",
+          }}
         />
-        <button type="submit">Update</button>
+        <button
+          type="submit"
+          style={{
+            background: "white",
+            color: "blue",
+            cursor: "pointer",
+            margin: "10px",
+          }}
+        >
+          Update
+        </button>
       </form>
     </div>
   );

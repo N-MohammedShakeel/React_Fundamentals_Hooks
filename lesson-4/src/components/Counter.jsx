@@ -13,18 +13,26 @@ const Counter = () => {
       <button onClick={() => dispatch({ type: "decrement" })}>Decrement</button>
       <button onClick={() => dispatch({ type: "reset" })}>Reset</button>
 
+      <br />
+      <br />
+
       <form
         onSubmit={(e) => {
           e.preventDefault();
         }}
       >
-        <label>Enter number to increment/decrement by:</label>
+        <label>
+          Enter number to increment/decrement by: <br />
+        </label>
         <input
           type="number"
           value={amt}
           onChange={(e) => setAmt(Number(e.target.value))}
           placeholder="Enter a number"
         />
+        <br />
+        <br />
+
         <button
           onClick={() => {
             dispatch({ type: "incrementByAmount", payload: amt });
